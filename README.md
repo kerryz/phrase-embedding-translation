@@ -8,7 +8,7 @@ To address this problem, Gao et. al propose a way of scoring phrase translation 
 
 The first layer of the neural network has the same number of nodes as the vocabulary size of both lanugages. The second and the third layer is set to 100 nodes. The initialization of the weights of the first layer to the hidden layer, denoted as `W1`, is done by using a bilingual topic distribution determined by Latent Dirchlet Allocation. The weights between the hidden layer and the third layer, `W2`, is initialized as an identity matrix.
 
-Optimization of the weights is done using stochastic gradient descent (unlike the paper, in which the authors used their own method called L-BFGS). The training should be stopped according to the early stop principle, as suggested in the paper, however we haven't fine tuned the system sufficiently to determine a stop condition as of yet.
+Optimization of the weights is done using stochastic gradient descent (unlike the paper, in which the authors use L-BFGS). The training should be stopped according to the early stop principle, as suggested in the paper, however we haven't fine tuned the system sufficiently to determine a stop condition as of yet.
 
 
 # Dependencies
